@@ -151,7 +151,7 @@ for (var i = 0; i < headerSmallMenuLinks.length; i++) {
 
 var headerLogoConatiner = document.querySelector('.header__logo-container');
 headerLogoConatiner.addEventListener('click', function () {
-  location.href = 'index.html';
+  return location.href = '/';
 });
 var $currentYear = document.getElementById('current-year');
 $currentYear.innerHTML = new Date().getFullYear();
@@ -183,7 +183,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "43493" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "44601" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
